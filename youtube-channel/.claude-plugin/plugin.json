@@ -1,0 +1,7 @@
+{
+  "name": "youtube-channel",
+  "version": "1.0.0",
+  "description": "Ведение YouTube-канала из Claude Code: идеи, сценарии, метаданные, загрузка видео, аналитика и ответы на комментарии.",
+  "author": { "name": "Denys Boiko" },
+  "keywords": ["youtube", "content", "video", "analytics"]
+}
