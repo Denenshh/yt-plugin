@@ -19,6 +19,7 @@
 | Команда | Что делает |
 |---|---|
 | `/yt-setup` | первичная настройка и авторизация |
+| `/yt-short [тема]` | AI-шортс под ключ: факты → сценарий → озвучка → видео с субтитрами → загрузка |
 | `/yt-ideas [тема]` | идеи видео с оценкой → `ideas.md` |
 | `/yt-script <тема> [shorts]` | сценарий → `videos/.../script.md` |
 | `/yt-meta <видео>` | названия, описание, теги, таймкоды, превью → `meta.md` |
@@ -40,6 +41,17 @@
 7. `python3 youtube-channel/scripts/yt.py auth` — вход через браузер.
 
 Токен хранится в `~/.config/yt-claude/token.json` (путь меняется переменной `YT_CLAUDE_HOME`).
+
+## AI-шортсы (Windows)
+
+```
+winget install Python.Python.3.12
+winget install Gyan.FFmpeg
+pip install edge-tts google-api-python-client google-auth-oauthlib google-auth-httplib2
+setx PEXELS_API_KEY "ваш_ключ"      # необязательно, бесплатно на pexels.com/api
+```
+Перезапустите терминал после установки. Свои записи геймплея кладите в `clips/`
+в папке канала, фоновую музыку (например из Фонотеки YouTube) — в `music/`.
 
 ## Ограничения
 

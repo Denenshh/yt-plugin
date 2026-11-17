@@ -303,6 +303,8 @@ def cmd_upload(a):
         fail("Описание длиннее 5000 символов.")
     tags = [t.strip() for t in (a.tags or "").split(",") if t.strip()]
     status = {"privacyStatus": a.privacy, "selfDeclaredMadeForKids": a.made_for_kids}
+    if a.synthetic:
+        status["containsSyntheticMedia"] = True
     if a.publish_at:
         status["privacyStatus"] = "private"  # YouTube требует private для отложенной публикации
         status["publishAt"] = a.publish_at
@@ -383,6 +385,8 @@ def main():
     s.add_argument("--category", default="22", help="22 = People & Blogs, 27 = Education, 28 = Science & Tech, 20 = Gaming")
     s.add_argument("--language", help="напр. ru, en")
     s.add_argument("--made-for-kids", action="store_true")
+    s.add_argument("--synthetic", action="store_true",
+                   help="пометить как реалистичный AI-контент (раскрытие для YouTube)")
     s.add_argument("--yes", action="store_true"); s.set_defaults(fn=cmd_upload)
 
     a = p.parse_args()
