@@ -1,7 +1,14 @@
 {
   "name": "youtube-channel",
   "version": "1.1.0",
-  "description": "Ведение YouTube-канала из Claude Code: идеи, сценарии, метаданные, загрузка видео, аналитика и ответы на комментарии.",
-  "author": { "name": "Denys Boiko" },
-  "keywords": ["youtube", "content", "video", "analytics"]
+  "description": "Ведение YouTube-канала из Claude Code: AI-шортсы под ключ, идеи, сценарии, загрузка видео, аналитика и ответы на комментарии.",
+  "author": {
+    "name": "Denys Boiko"
+  },
+  "keywords": [
+    "youtube",
+    "content",
+    "video",
+    "analytics"
+  ]
 }

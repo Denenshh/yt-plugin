@@ -1,11 +1,14 @@
 {
   "name": "yt-tools",
-  "owner": { "name": "Denys Boiko" },
+  "owner": {
+    "name": "Denys Boiko"
+  },
   "plugins": [
     {
       "name": "youtube-channel",
       "source": "./youtube-channel",
-      "description": "Ведение YouTube-канала: идеи, сценарии, загрузка, аналитика, комментарии."
+      "description": "Ведение YouTube-канала: AI-шортсы под ключ, идеи, сценарии, загрузка, аналитика, комментарии.",
+      "version": "1.1.0"
     }
   ]
 }
